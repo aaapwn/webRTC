@@ -29,7 +29,7 @@ async function sendOffer(offer) {
     await setDoc(doc_call, {offer});
 }
 
-function waitAnswer() {
+async function waitAnswer() {
     onSnapshot(doc_call, snapshot => {
         const data = snapshot.data();
         if (!pc.currentRemoteDescription && data?.answer) {

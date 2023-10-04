@@ -24,7 +24,7 @@ async function getOffer(doc_call) {
 }
 
 async function createAnswer() {
-    const answerDescription = pc.createAnswer();
+    const answerDescription = await pc.createAnswer();
     const answerSDP = await createSDP(answerDescription);
     return answerSDP;
 }

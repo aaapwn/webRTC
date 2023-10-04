@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>WebRTC</h1>
 
-    <div class="videos">
-      <span>
-        <h3>Local Steam</h3>
-        <video id="vdo_local" autoplay playsinline></video>
-      </span>
-      <span>
-        <h3>Remote Steam</h3>
-        <video id="vdo_local" autoplay playsinline></video>
-      </span>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <div class="operation">
-      <h2>1. Start Steam</h2>
-      <button id="btn_webCam">Start Steam</button>
+<body>
+  <h1>WebRTC</h1>
 
-      <h2>2. Offer</h2>
-      <button id="btn_offer" disabled>offer</button>
-      <input id="input_offer" />
+  <div class="videos">
+    <span>
+      <h3>Local Steam</h3>
+      <video id="vdo_local" autoplay playsinline></video>
+    </span>
+    <span>
+      <h3>Remote Steam</h3>
+      <video id="vdo_remote" autoplay playsinline></video>
+    </span>
+  </div>
 
-      <h2>3. Answer</h2>
-      <input id="input_answer" />
-      <button id="btn_answer" disabled>Answer</button>
-    </div>
+  <div class="operation">
+    <h2>1. Start Steam</h2>
+    <button id="btn_webCam">Start Steam</button>
 
-    <script>
-      const firebaseConfig = {
-        apiKey: "AIzaSyDRxnUztWy__bAgq-wFLCxrE0cp3v8ghOU",
-        authDomain: "webrtc-beginer-5ab98.firebaseapp.com",
-        projectId: "webrtc-beginer-5ab98",
-        storageBucket: "webrtc-beginer-5ab98.appspot.com",
-        messagingSenderId: "944904574183",
-        appId: "1:944904574183:web:61e90a44d595b8a73abe42",
-      };
-    </script>
-    <script src="./webRTC.js" type="module"></script>
-  </body>
+    <h2>2. Offer</h2>
+    <button id="btn_offer" disabled>offer</button>
+    <input id="input_offer" />
+
+    <h2>3. Answer</h2>
+    <input id="input_answer" />
+    <button id="btn_answer" disabled>Answer</button>
+  </div>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCqmM8e3S8ZosWQq-zx_dksVPdZl-W-OWM",
+      authDomain: "webrtc-beginner-27f28.firebaseapp.com",
+      projectId: "webrtc-beginner-27f28",
+      storageBucket: "webrtc-beginner-27f28.appspot.com",
+      messagingSenderId: "400373825790",
+      appId: "1:400373825790:web:aa82d7415ce11cef9665af"
+    };
+  </script>
+  <script src="./webRTC.js" type="module"></script>
+</body>
+
 </html>

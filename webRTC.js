@@ -60,11 +60,12 @@ async function setStream() {
 }
 
 export async function createSDP(description) {
+    
     await pc.setLocalDescription(description);
 
     const sdp = {
-        type: description.type,
         sdp: description.sdp,
+        type: description.type
     };
 
     return sdp;
@@ -76,7 +77,7 @@ export function listenLocalCandidate(collection) {
     };
 }
 
-export function listenRemoteCandidate(collection) {
+export  async function listenRemoteCandidate(collection) {
     onSnapshot(collection, (snapshot) => {
         snapshot.docChanges().forEach((change) => {
             if (change.type === "added") {
